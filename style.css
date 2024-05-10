@@ -1,0 +1,148 @@
+:root {
+	--shadow: #FF4081;
+}
+
+body, html  {
+	height: 100%;
+	display: grid;
+	background: linear-gradient(120deg, #ff007f, #ffc400);
+	font-family: "Satisfy";
+	overflow: hidden;
+}
+
+p {
+	position: relative;
+	text-align: center;
+	text-shadow: 4px 4px 1px var(--shadow), 5px 5px var(--shadow);
+	font-family: "Satisfy";
+	color: white;
+	font-size: 50px;
+	top: 80px;
+	z-index: 2;
+}
+
+#word1 {
+	animation-name: grow1;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 5;
+	animation-duration: 3s;
+}
+
+#word2 {
+	animation-name: grow2;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 5;
+	animation-duration: 3s;
+}
+
+@keyframes grow1 {
+	0% {
+		50px;
+	}
+	25% {
+		font-size: 57px;
+	}
+	40% {
+		font-size: 75px;
+	}
+	50% {
+		font-size: 68px;
+	}
+	75% {
+		font-size: 75px;
+	}
+	80% {
+		font-size: 63px;
+	}
+	100% {
+		font-size: 50px;
+	}
+}
+
+@keyframes grow1 {
+	0% {
+		50px;
+	}
+	25% {
+		font-size: 75px;
+	}
+	30% {
+		font-size: 63px;
+	}
+	40% {
+		font-size: 75px;
+	}
+	50% {
+		font-size: 50px;
+	}
+	63% {
+		font-size: 50px;
+	}
+	75% {
+		font-size: 50px;
+	}
+	80% {
+		font-size: 50px;
+	}
+	100% {
+		font-size: 50px;
+	}
+}
+
+@keyframes grow2 {
+	0% {
+		50px;
+	}
+	25% {
+		font-size: 50px;
+	}
+	50% {
+		font-size: 50px;
+	}
+	63% {
+		font-size: 75px;
+	}
+	75% {
+		font-size: 63px;
+	}
+	95% {
+		font-size: 75px;
+	}
+	100% {
+		font-size: 50px;
+	}
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	animation-name: rise;
+	animation-duration: 5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+}
+
+.sun {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	border: 1px solid white;
+	top: 80px;
+	border-radius: 50%;
+	background: linear-gradient(120deg, #FFE5B4, #FFEB3B);
+	box-shadow: 4px 4px 40px 20px #eedd82, -4px -4px 40px 20px #eedd82;
+	z-index: 0;
+	animation-name: rise;
+	animation-duration: 5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+}
+
+@keyframes rise {
+	0% {
+		top: 500px;
+	}
+	100% {
+		align-items: baseline;
+	}
+}
